@@ -8,7 +8,7 @@
 
 * **`ArtMarket.Domain`** — համակարգի միջուկը: Պարունակում է դոմենային էության մոդելը (`ArtworkRecord`) և ռեպոզիտորիայի ինտերֆեյսը (`IArtworkRepository`)՝ առանց արտաքին կախվածությունների:
 * **`ArtMarket.Application`** — բիզնես տրամաբանության շերտ: Ներառում է վերլուծական սերվիսը (`ArtAnalyticsService`), ինտերֆեյսները (`IArtAnalyticsService`, `IPricePredictionEngine`) և տվյալների փոխանցման օբյեկտները (DTOs):
-* **`ArtMarket.Infrastructure`** — տվյալների բազայի և ML մոդuli իրականացում.
+* **`ArtMarket.Infrastructure`** — տվյալների բազայի և ML մոդուլի իրականացում.
   * **Persistence:** PostgreSQL բազայի կոնտեքստ (`ArtMarketDbContext`)՝ Entity Framework Core-ի միջոցով:
   * **Machine Learning:** գնի կանխատեսման շարժիչ (`MlPricePredictionEngine`)՝ հիմնված **ML.NET FastTree** ռեգրեսիայի վրա:
 * **`ArtMarket.Web`** — REST API շերտ: Ներառում է կոնտրոլլերը (`ArtworksController`), Dependency Injection-ի կարգավորումները և **Swagger UI** ինտերակտիվ միջավայրը:
